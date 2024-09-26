@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int n,i,next,fri=0,sec=1;
+    printf("how many no.of fibononcci:");
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+    if(i<=1){
+     next=i;
+    }
+    else{
+    next=fri+sec;
+    fri=sec;
+    sec=next;
+    }
+    printf("%d ",next);
+}
+     
+   
+    
+    return 0;
+}
